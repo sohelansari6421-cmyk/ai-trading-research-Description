@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Experiment from "./pages/Experiment/Experiment";
 import History from "./pages/History/History";
-import Research from "./pages/Research/Reserach";
+import Research from "./pages/Research/Research";
+
 
 function App() {
   return (
