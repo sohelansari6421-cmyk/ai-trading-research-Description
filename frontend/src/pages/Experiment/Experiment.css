@@ -1,0 +1,158 @@
+.experiment-page {
+    min-height: calc(100vh - 81px);
+    padding: 48px 24px 80px;
+    background:
+        radial-gradient(circle at 50% 0%,
+            rgba(37, 99, 235, 0.08),
+            transparent 35%),
+        #0f172a;
+}
+
+.experiment-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.back-button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: #94a3b8;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #ffffff;
+}
+
+.experiment-header {
+    margin: 42px 0 30px;
+}
+
+.experiment-label {
+    margin: 0 0 10px;
+    color: #60a5fa;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.experiment-header h2 {
+    max-width: 800px;
+    margin: 0;
+    color: #f8fafc;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 650;
+}
+
+.original-question {
+    margin: 12px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.experiment-card {
+    padding: 28px;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    background: rgba(17, 24, 39, 0.8);
+}
+
+.card-heading {
+    margin-bottom: 22px;
+}
+
+.card-label {
+    margin: 0 0 6px;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.card-heading h3 {
+    margin: 0;
+    color: #f8fafc;
+    font-size: 20px;
+}
+
+.experiment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.research-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 28px;
+    padding: 26px;
+    border: 1px solid #166534;
+    border-radius: 14px;
+    background: #052e16;
+}
+
+.research-action-label {
+    margin: 0 0 7px;
+    color: #4ade80;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.research-action h3 {
+    margin: 0;
+    color: #f8fafc;
+    font-size: 20px;
+}
+
+.research-action p:last-child {
+    max-width: 600px;
+    margin: 8px 0 0;
+    color: #a7f3d0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.run-research-button {
+    flex-shrink: 0;
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 9px;
+    background: #22c55e;
+    color: #052e16;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.run-research-button:hover {
+    background: #4ade80;
+}
+
+@media (max-width: 700px) {
+    .experiment-page {
+        padding: 32px 18px 60px;
+    }
+
+    .experiment-header {
+        margin-top: 32px;
+    }
+
+    .experiment-header h2 {
+        font-size: 25px;
+    }
+
+    .experiment-card {
+        padding: 20px;
+    }
+
+    .experiment-grid {
+        grid-template-columns: 1fr;
+    }
+}

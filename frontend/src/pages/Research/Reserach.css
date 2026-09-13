@@ -1,0 +1,259 @@
+.research-page {
+    min-height: calc(100vh - 72px);
+    padding: 48px 24px 80px;
+    background: #f7f8fa;
+}
+
+.research-container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.research-back-button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 36px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5d6470;
+    cursor: pointer;
+}
+
+.research-back-button:hover {
+    color: #111827;
+}
+
+.research-header {
+    margin-bottom: 32px;
+}
+
+.research-label,
+.section-heading p,
+.conclusion-label {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #737b87;
+}
+
+.research-header h1 {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -1.8px;
+    color: #111827;
+}
+
+.research-description {
+    margin: 14px 0 0;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.simulated-badge {
+    display: inline-flex;
+    margin-top: 18px;
+    padding: 7px 11px;
+    border: 1px solid #d8dde5;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #68707d;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.research-summary-card,
+.chart-card,
+.conclusion-card {
+    background: #ffffff;
+    border: 1px solid #e3e6eb;
+    border-radius: 18px;
+}
+
+.research-summary-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    overflow: hidden;
+    margin-bottom: 56px;
+}
+
+.research-summary-card>div {
+    padding: 22px;
+    background: #ffffff;
+}
+
+.research-summary-card span,
+.metric-card span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #858c97;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.research-summary-card strong {
+    display: block;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #20242b;
+}
+
+.performance-section {
+    margin-bottom: 48px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2,
+.conclusion-card h2 {
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: -0.6px;
+    color: #161a20;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.metric-card {
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e3e6eb;
+    border-radius: 16px;
+}
+
+.metric-card strong {
+    display: block;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #15181d;
+}
+
+.chart-card {
+    padding: 30px;
+    margin-bottom: 24px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.chart-row {
+    display: grid;
+    grid-template-columns: 70px 1fr 55px;
+    align-items: center;
+    gap: 14px;
+}
+
+.chart-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #606873;
+}
+
+.chart-bar-container {
+    height: 14px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #edf0f3;
+}
+
+.chart-bar {
+    height: 100%;
+    border-radius: inherit;
+    background: #161a20;
+    transition: width 0.5s ease;
+}
+
+.chart-value {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+    color: #30353d;
+}
+
+.conclusion-card {
+    padding: 30px;
+    margin-bottom: 32px;
+}
+
+.conclusion-card h2 {
+    margin-bottom: 14px;
+}
+
+.conclusion-card>p:last-child {
+    max-width: 850px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #59616d;
+}
+
+.research-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-research-button {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 18px;
+    background: #111318;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.new-research-button:hover {
+    background: #292d34;
+}
+
+@media (max-width: 850px) {
+    .research-summary-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .research-page {
+        padding: 32px 16px 60px;
+    }
+
+    .research-summary-card,
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-header h1 {
+        font-size: 36px;
+    }
+
+    .chart-card,
+    .conclusion-card {
+        padding: 22px;
+    }
+
+    .chart-row {
+        grid-template-columns: 55px 1fr 45px;
+        gap: 9px;
+    }
+}

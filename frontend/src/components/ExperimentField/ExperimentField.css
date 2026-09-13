@@ -1,0 +1,26 @@
+.experiment-field {
+    padding: 20px;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    background: #111827;
+}
+
+.field-label {
+    margin: 0 0 8px;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.field-value {
+    color: #f8fafc;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.field-value.empty {
+    color: #64748b;
+    font-style: italic;
+}
